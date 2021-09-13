@@ -49,46 +49,46 @@ $primary-invert: $pink-invert;
     justify-content: space-evenly;
     flex-wrap: nowrap;
     
-    .link-poslovna {
-        position: relative;
-        width: 80%;
-        left: -125px;
-        top: 50px;
+    .link-vizija {
+        position: absolute;
+        width: 15%;
+        left: 5px;
+        top: 380px;
     }
 
     .link-slobodna {
-        position: relative;
-        width: 80%;
-        left: -105px;
-        top: 200px;
+        position: absolute;
+        width: 20%;
+        left: 200px;
+        top: 450px;
     }
 
     .link-forma {
-        position: relative;
-        width: 80%;
-        top: 50px;
-        left: -105px;
+        position: absolute;
+        width: 10%;
+        top: 300px;
+        left: 550px;
     }
 
     .link-opusteno {
-        position: relative;
-        width: 90%;
-        left: -40px;
-        top: 200px;
+        position: absolute;
+        width: 15%;
+        left: 740px;
+        top: 400px;
     }
 
     .link-snovi {
-        position: relative;
-        width: 80%;
-        left: 40px;
-        top: 215px;
+        position: absolute;
+        width: 15%;
+        left: 1040px;
+        top: 410px;
     }
 
     .link-ljubav {
-        position: relative;
-        width: 80%;
-        left: 50px;
-        top: 80px;
+        position: absolute;
+        width: 10%;
+        right: 150px;
+        top: 280px;
     }
 }
 
