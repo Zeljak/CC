@@ -1,0 +1,416 @@
+@charset "utf-8";
+
+// Customization
+
+// You can easily customize Bulma with your own variables.
+// Just uncomment the following block to see the result.
+
+/*
+// 1. Import the initial variables
+@import "../node_modules/bulma/sass/utilities/initial-variables";
+
+// 2. Set your own initial variables
+// Update the blue shade, used for links
+$blue: #06bcef;
+// Add pink and its invert
+$pink: #ff8080;
+$pink-invert: #fff;
+// Update the sans-serif font family
+$family-sans-serif: "Helvetica", "Arial", sans-serif;
+
+// 3. Set the derived variables
+// Use the new pink as the primary color
+$primary: $pink;
+$primary-invert: $pink-invert;
+
+// 4. Import the rest of Bulma
+*/
+@import "../node_modules/bulma/sass/utilities/initial-variables";
+
+@import "./variables";
+
+@import "../node_modules/bulma/bulma";
+
+.body {
+    background-color: $white;
+    max-width: 100vw;
+    margin: 0
+}
+
+// Home page
+.hero-body {
+    background: url(../_assets/images/city-center-one-header.jpg) no-repeat;
+    background-size: cover;
+    background-color: $white;
+    }
+
+.container-index {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    
+    .link-poslovna {
+        position: relative;
+        width: 80%;
+        left: -125px;
+        top: 50px;
+    }
+
+    .link-slobodna {
+        position: relative;
+        width: 80%;
+        left: -105px;
+        top: 200px;
+    }
+
+    .link-forma {
+        position: relative;
+        width: 80%;
+        top: 50px;
+        left: -105px;
+    }
+
+    .link-opusteno {
+        position: relative;
+        width: 90%;
+        left: -40px;
+        top: 200px;
+    }
+
+    .link-snovi {
+        position: relative;
+        width: 80%;
+        left: 40px;
+        top: 215px;
+    }
+
+    .link-ljubav {
+        position: relative;
+        width: 80%;
+        left: 50px;
+        top: 80px;
+    }
+}
+
+.bottom-logo {
+    .black {
+        font-family: 'Allison', cursive;
+        font-size: 200px;
+        color: $black;
+        position: relative;
+        left: 650px;
+        top: -315px;
+    }
+    .white {
+        font-family: 'Allison', cursive;
+        font-size: 200px;
+        color: $white;
+        position: relative;
+        left: 650px;
+        top: -650px;
+        z-index: -1;
+}
+}
+
+.logo--city {
+    position: relative;
+    top: -20px;
+    left: 10px;
+}
+
+.traka {
+    width: 90%;
+}
+ 
+
+
+//Poslovna vizija
+.hero-body.poslovna {
+    background: url(../_assets/images/poslovna-vizija-header.jpg)
+    no-repeat;
+    background-size: cover;
+    background-color: $white;
+    height: 820px;
+}
+
+.zelim {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    top: -20px;
+}
+
+.container-photo {
+    height: 1100px;
+}
+.section-white {
+    height: 50px;
+}
+
+.poslovna-photo1 {
+    position: relative;
+    left: 100px;
+    z-index: -1;
+    }
+    
+.poslovna-photo2 {
+    position: relative;
+    left: -290px;
+    top: 40px;
+  
+    }
+    
+    .third {
+    position: relative;
+    left: 800px;
+    top: -950px;
+    z-index: -1;
+    } 
+
+.subtitle {
+    font-family: $family-primary;
+    font-size: $is-size-1;
+    color: $black-light;
+    line-height: $line-height1;
+    padding-left: 80px;
+    padding-top: 8px;
+ 
+}
+
+p {
+    font-family: $family-secundary;
+    font-size: $is-size-2;
+    color: $black-light;
+    font-weight: 400;
+    line-height: $line-height1;
+    padding-left: 80px;
+}
+
+p.prices, .impressum {
+    color: 
+    $grey-light;
+    padding-top: 50px;
+    padding-left: 80px;
+    font-size: $is-size-2;
+}
+
+    a {
+        color: $black;
+    
+        &:hover {
+          color: $yellow;
+        }
+      }
+
+h4 {
+    font-size: $is-size-3;
+    font-family: $family-primary;
+    color: $grey-light;
+}
+
+.footer {
+    background-color: $white;
+}
+
+.container-footer {
+    display: flex;
+    justify-content: center;
+}
+
+//Sloboda izražavanja
+.sloboda {
+    background: url(../_assets/images/sloboda-izrazavanja-header.jpg)
+    no-repeat;
+    background-size: cover;
+    background-color: $white;
+    height: 820px;
+}
+
+.container-photo2 {
+    height: 900px;
+}
+
+.first {
+    position: absolute;
+    top: 1000px;
+    left: 0;
+    z-index: -1;
+    }
+    
+.second {
+    position: absolute;
+    left: 500px;
+    top: 1050px;
+    }
+    
+    .third {
+    position: absolute;
+    right: 0;
+    top: 1000px;
+    } 
+
+    .frida {
+        position: absolute;
+        top: 4700px;
+        left: 500px;
+    }
+
+    .section-white2 {
+        height: 100px;
+    }
+
+
+    //Top forma
+.forma {
+    background: url(../_assets/images/top-forma4.jpg)
+    no-repeat;
+    background-size: cover;
+    background-color: $white;
+    height: 820px;
+}
+
+.container-photo3 {
+    height: 900px;
+}
+
+.first {
+    position: absolute;
+    top: 1000px;
+    left: 0;
+    z-index: -1;
+    }
+    
+.second {
+    position: absolute;
+    left: 500px;
+    top: 1050px;
+    }
+    
+    .third {
+    position: absolute;
+    top: 1000px;
+    } 
+
+    .frida {
+        position: absolute;
+        top: 4700px;
+        left: 500px;
+    }
+
+    //Samo opušteno
+.opusteno {
+    background: url(../_assets/images/samo-opusteno-header.jpg)
+    no-repeat;
+    background-size: cover;
+    background-color: $white;
+    height: 820px;
+}
+
+.first {
+    position: absolute;
+    top: 1000px;
+    left: 0;
+    z-index: -1;
+    }
+    
+.second-opusteno {
+    position: absolute;
+    left: 500px;
+    top: 1050px;
+    
+    }
+    
+    .third-opusteno {
+    position: absolute;
+    right: -30px;
+    top: 1000px;
+    padding: 0;
+    z-index: -1;
+    } 
+
+    .style {
+        position: absolute;
+        top: 40px;
+        left: -120px;
+        z-index: 1;
+        width: 50%;
+    }
+
+    //Ostvari snove
+.snovi {
+    background: url(../_assets/images/ostvari-snove-header.jpg)
+    no-repeat;
+    background-size: cover;
+    background-color: $white;
+    height: 820px;
+}
+
+.first {
+    position: absolute;
+    top: 1000px;
+    left: 0;
+    z-index: -1;
+    }
+    
+.second-opusteno {
+    position: absolute;
+    left: 500px;
+    top: 1050px;
+    
+    }
+    
+    .third-opusteno {
+    position: absolute;
+    right: -30px;
+    top: 1000px;
+    padding: 0;
+    z-index: -1;
+    } 
+
+    .coco {
+        position: absolute;
+        top: 4800px;
+        left: 200px;
+    }
+
+    //Ljubav
+.ljubav {
+    background: url(../_assets/images/ljubav-header.jpg)
+    no-repeat;
+    background-size: cover;
+    background-color: $white;
+    height: 820px;
+}
+
+.ljubav-first {
+    position: absolute;
+    top: 1000px;
+    left: 0;
+    z-index: -1;
+    }
+    
+.ljubav-second {
+    position: absolute;
+    left: 300px;
+    top: 1150px;
+    
+    }
+    
+    .ljubav-third {
+    position: absolute;
+    right: -30px;
+    top: 1000px;
+    padding: 0;
+    z-index: -1;
+    } 
+
+    .coco {
+        position: absolute;
+        top: 4800px;
+        left: 200px;
+    }
+
+    .ljubav1 {
+        height: 100%;
+        width: 900px;
+    }
