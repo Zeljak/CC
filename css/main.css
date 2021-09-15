@@ -10429,12 +10429,101 @@ label.panel-block:hover {
   margin: 0;
 }
 
+.hero.is-primary {
+  background-color: white;
+}
+
 .hero-body {
-  background: url(../_assets/video/CCVOne_prijedlog-finalni_banner.gif) no-repeat;
+  background: url(../_assets/images/city-center-one-header.jpg) no-repeat;
   background-size: cover;
   background-color: white;
 }
 
+@-webkit-keyframes mingle {
+  0% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+    left: -10px;
+  }
+  1% {
+    -webkit-transform: rotate(-7deg);
+            transform: rotate(-7deg);
+    left: 5px;
+  }
+  24.99% {
+    -webkit-transform: rotate(-7deg);
+            transform: rotate(-7deg);
+    left: 5px;
+  }
+  25% {
+    -webkit-transform: rotate(8deg);
+            transform: rotate(8deg);
+    left: 0px;
+  }
+  49.99% {
+    -webkit-transform: rotate(8deg);
+            transform: rotate(8deg);
+    left: 0px;
+  }
+  50% {
+    -webkit-transform: rotate(-3deg);
+            transform: rotate(-3deg);
+    left: 7px;
+  }
+  99.99% {
+    -webkit-transform: rotate(-3deg);
+            transform: rotate(-3deg);
+    left: 7px;
+  }
+  100% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+    left: -10px;
+  }
+}
+
+@keyframes mingle {
+  0% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+    left: -10px;
+  }
+  1% {
+    -webkit-transform: rotate(-7deg);
+            transform: rotate(-7deg);
+    left: 5px;
+  }
+  24.99% {
+    -webkit-transform: rotate(-7deg);
+            transform: rotate(-7deg);
+    left: 5px;
+  }
+  25% {
+    -webkit-transform: rotate(8deg);
+            transform: rotate(8deg);
+    left: 0px;
+  }
+  49.99% {
+    -webkit-transform: rotate(8deg);
+            transform: rotate(8deg);
+    left: 0px;
+  }
+  50% {
+    -webkit-transform: rotate(-3deg);
+            transform: rotate(-3deg);
+    left: 7px;
+  }
+  99.99% {
+    -webkit-transform: rotate(-3deg);
+            transform: rotate(-3deg);
+    left: 7px;
+  }
+  100% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+    left: -10px;
+  }
+}
 .container-index {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10445,11 +10534,20 @@ label.panel-block:hover {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
 }
+.container-index .logo-index {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 113px;
+  height: 98px;
+}
 .container-index .link-vizija {
   position: absolute;
   width: 15%;
   left: 5px;
   top: 380px;
+  -webkit-animation: mingle 1s 2s infinite;
+          animation: mingle 1s 2s infinite;
 }
 .container-index .link-slobodna {
   position: absolute;
@@ -10460,7 +10558,7 @@ label.panel-block:hover {
 .container-index .link-forma {
   position: absolute;
   width: 10%;
-  top: 300px;
+  top: 330px;
   left: 500px;
 }
 .container-index .link-opusteno {
@@ -10472,20 +10570,21 @@ label.panel-block:hover {
 .container-index .link-snovi {
   position: absolute;
   width: 15%;
-  left: 1040px;
-  top: 370px;
+  right: 220px;
+  top: 390px;
 }
 .container-index .link-ljubav {
   position: absolute;
   width: 10%;
-  right: 150px;
-  top: 280px;
+  right: 100px;
+  top: 330px;
 }
 
 .zene {
   position: absolute;
-  right: 150px;
-  top: 410px;
+  right: 240px;
+  top: 160px;
+  width: 60%;
 }
 
 .bottom-logo .black {
